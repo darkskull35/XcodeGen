@@ -5,10 +5,7 @@ import PackageDescription
 let package = Package(
     name: "XcodeGen",
     platforms: [.macOS(.v10_13)],
-    products: [
-        .executable(name: "xcodegen", targets: ["XcodeGen"]),
-        .library(name: "XcodeGenKit", targets: ["XcodeGenKit"]),
-        .library(name: "ProjectSpec", targets: ["ProjectSpec"]),
+
     ],
     dependencies: [
         .package(url: "https://github.com/kylef/PathKit.git", from: "1.0.1"),
